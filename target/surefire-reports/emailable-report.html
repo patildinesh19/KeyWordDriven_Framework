@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">8</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">8</td><td class="numi">24.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="8">Operation.BaseClass</td><td><a href="#m1"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">2</td><td>1687422659306</td><td class="numi">7400</td></tr><tr class="failedodd"><td><a href="#m2"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">2</td><td>1687422659306</td><td class="numi">7400</td></tr><tr class="failedodd"><td><a href="#m3"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">2</td><td>1687422659306</td><td class="numi">7400</td></tr><tr class="failedodd"><td><a href="#m4"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">2</td><td>1687422659306</td><td class="numi">7400</td></tr><tr class="failedodd"><td><a href="#m5"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">2</td><td>1687422659306</td><td class="numi">7400</td></tr><tr class="failedodd"><td><a href="#m6"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">2</td><td>1687422659306</td><td class="numi">7400</td></tr><tr class="failedodd"><td><a href="#m7"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">2</td><td>1687422659306</td><td class="numi">7400</td></tr><tr class="failedodd"><td><a href="#m8"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">2</td><td>1687422659306</td><td class="numi">7400</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="8">Operation.BaseClass</td><td><a href="#m9"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">6</td><td>1687422667092</td><td class="numi">15724</td></tr><tr class="passedodd"><td><a href="#m10"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">6</td><td>1687422667092</td><td class="numi">15724</td></tr><tr class="passedodd"><td><a href="#m11"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">6</td><td>1687422667092</td><td class="numi">15724</td></tr><tr class="passedodd"><td><a href="#m12"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">6</td><td>1687422667092</td><td class="numi">15724</td></tr><tr class="passedodd"><td><a href="#m13"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">6</td><td>1687422667092</td><td class="numi">15724</td></tr><tr class="passedodd"><td><a href="#m14"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">6</td><td>1687422667092</td><td class="numi">15724</td></tr><tr class="passedodd"><td><a href="#m15"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">6</td><td>1687422667092</td><td class="numi">15724</td></tr><tr class="passedodd"><td><a href="#m16"><b>readtestsuiteandexecutetestcase</b>  </a></td><td class="numi">6</td><td>1687422667092</td><td class="numi">15724</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">Operation.BaseClass:readtestsuiteandexecutetestcase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>VERIFY_INVALID_LOGIN_MESSAGE</td>
+<td>Y</td>
+<td>Regression</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<p>null</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.fail(Assert.java:101)
+<br/>at com.tf.excel.readsheet_task.transaction(readsheet_task.java:137)
+<br/>at com.tf.excel.readsheet_task.readtask_assheet(readsheet_task.java:111)
+<br/>at Operation.BaseClass.readtestsuiteandexecutetestcase(BaseClass.java:55)
+<br/>29 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">Operation.BaseClass:readtestsuiteandexecutetestcase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>VERIFY_SUCESSFULLY_LOGIN</td>
+<td>Y</td>
+<td>Regression</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<p>null</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.fail(Assert.java:101)
+<br/>at com.tf.excel.readsheet_task.transaction(readsheet_task.java:137)
+<br/>at com.tf.excel.readsheet_task.readtask_assheet(readsheet_task.java:111)
+<br/>at Operation.UI_Operation.perfrom(UI_Operation.java:47)
+<br/>at com.tf.excel.readsheet_task.transaction(readsheet_task.java:132)
+<br/>at com.tf.excel.readsheet_task.readtask_assheet(readsheet_task.java:111)
+<br/>at Operation.BaseClass.readtestsuiteandexecutetestcase(BaseClass.java:55)
+<br/>29 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Operation.BaseClass:readtestsuiteandexecutetestcase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>VERIFY_TOP_DEALS_LINK</td>
+<td>N</td>
+<td>Smoke</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Operation.BaseClass:readtestsuiteandexecutetestcase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>SEARCH_VEG</td>
+<td>N</td>
+<td>Smoke</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">Operation.BaseClass:readtestsuiteandexecutetestcase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>VERIFY_CART_WITHOUT_PRODUCT</td>
+<td>Y</td>
+<td>Smoke</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Operation.BaseClass:readtestsuiteandexecutetestcase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>VERIFY_QUAN_PRICE_TOTAL_ORDER</td>
+<td>N</td>
+<td>Smoke</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Operation.BaseClass:readtestsuiteandexecutetestcase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>SEARCH_VEG_AND_ORDER</td>
+<td>N</td>
+<td>Smoke</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">Operation.BaseClass:readtestsuiteandexecutetestcase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>ADD_PRODUCT_AND_VERIFY</td>
+<td>Y</td>
+<td>Regression</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
