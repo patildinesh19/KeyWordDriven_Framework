@@ -10,15 +10,15 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
-import config.readconfigfile;
+import config.Readconfigfile;
 
-public class readexcelfile
+public class Readexcelfile
 {
 	@DataProvider(name="readtestsuite")
 	public static Object[][] readexcelfile_TestSuite() throws IOException
 	{	
 		Object[][] obj1=null;
-		readconfigfile data= new readconfigfile();
+		Readconfigfile data= new Readconfigfile();
 		//create object for open file
 		
 		File file = new File(System.getProperty("user.dir")+"\\"+data.getexcelfilename());

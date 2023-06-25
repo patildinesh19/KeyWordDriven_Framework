@@ -15,10 +15,10 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.tf.excel.readexcelfile;
-import com.tf.excel.readsheet_task;
+import com.tf.excel.Readexcelfile;
+import com.tf.excel.Readsheet_task;
 
-import config.readconfigfile;
+import config.Readconfigfile;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass
@@ -38,9 +38,9 @@ public class BaseClass
 		System.out.println("Extent Report Started");	
 		
 	}
-	@Test(dataProvider="readtestsuite",dataProviderClass=readexcelfile.class)
+	@Test(dataProvider="readtestsuite",dataProviderClass=Readexcelfile.class)
 	public static void readtestsuiteandexecutetestcase(Object testcase_Name,Object checkflag,Object Suite) throws IOException
-	{	readconfigfile data3= new readconfigfile();
+	{	Readconfigfile data3= new Readconfigfile();
 		System.out.println("Read complete suite");
 		String test_Name=testcase_Name.toString();
 		String Flag=checkflag.toString();
@@ -52,7 +52,7 @@ public class BaseClass
 			extent_test=extent.startTest(test_Name);
 			//-----------------------------------------------------------
 			
-			readsheet_task.readtask_assheet(test_Name,null,null,null,null,null,null);			
+			Readsheet_task.readtask_assheet(test_Name,null,null,null,null,null,null);			
 			
 		}
 		if(test_Name!= null && Flag.contains("N"))
@@ -70,7 +70,7 @@ public class BaseClass
 		if(ITestResult.FAILURE == result.getStatus())
 		{	System.out.println("start taking screenshot for faild test case");
 			testfailcontainer = testfailcontainer+1;
-			sheet_name = readsheet_task.testcase_name_for_fail_scenario;
+			sheet_name = Readsheet_task.testcase_name_for_fail_scenario;
 			Screenshots.capturescreenshot(driver, sheet_name);
 			extent_test.log(LogStatus.FAIL, "Test case is Failed");
 			extent.endTest(extent_test);
@@ -111,7 +111,7 @@ public class BaseClass
 	}
 	public static void lunchbrowser()
 	{
-		readconfigfile data= new readconfigfile();
+		Readconfigfile data= new Readconfigfile();
 		String browsername= System.getProperty("browser")!=null? System.getProperty("browser") :data.getbrowsername();
 		if(browsername.contentEquals("chrome"))
 		{

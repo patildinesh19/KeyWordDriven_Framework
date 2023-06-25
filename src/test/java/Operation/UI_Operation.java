@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
-import com.tf.excel.readsheet_task;
+import com.tf.excel.Readsheet_task;
 
 public class UI_Operation 
 {
@@ -44,7 +44,7 @@ public class UI_Operation
 			String username=Object_Name;
 			String password=Object_Type;
 			BaseClass.logstart(KEYWORD, Object_Name);
-			readsheet_task.readtask_assheet(sheet_Name,username,password,null,null,null,null);
+			Readsheet_task.readtask_assheet(sheet_Name,username,password,null,null,null,null);
 			BaseClass.logEnd(KEYWORD, Object_Name);
 			break;
 			
@@ -54,7 +54,7 @@ public class UI_Operation
 			String sheet_Name2=Keyword;
 			String product_name=Object_Name;
 			String countofproduct=Object_Type;
-			readsheet_task.readtask_assheet(sheet_Name2,product_name,countofproduct,null,null,null,null);
+			Readsheet_task.readtask_assheet(sheet_Name2,product_name,countofproduct,null,null,null,null);
 			BaseClass.logEnd(KEYWORD, Object_Name);
 			break;
 		

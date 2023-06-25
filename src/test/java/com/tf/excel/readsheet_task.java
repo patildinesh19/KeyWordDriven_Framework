@@ -17,9 +17,9 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import Operation.BaseClass;
 import Operation.UI_Operation;
-import config.readconfigfile;
+import config.Readconfigfile;
 
-public class readsheet_task
+public class Readsheet_task
 {
 	public static RemoteWebDriver driver=null;
 	public static String testcase_name_for_fail_scenario;
@@ -33,7 +33,7 @@ public class readsheet_task
 		try {
 		System.out.println("Start the test case execution for : "+Sheet_name);
 		
-		readconfigfile data= new readconfigfile();
+		Readconfigfile data= new Readconfigfile();
 		//create object for open file
 		
 		File file = new File(System.getProperty("user.dir")+"\\"+data.getexcelfilename());

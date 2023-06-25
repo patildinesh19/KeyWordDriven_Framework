@@ -7,12 +7,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class readconfigfile
+public class Readconfigfile
 {
 	private InputStream stream=null;
 	private Properties pr=null;
 	
-	public readconfigfile()
+	public Readconfigfile()
 	{
 		try {
 				pr=new Properties();			
